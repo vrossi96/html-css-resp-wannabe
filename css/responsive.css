@@ -1,7 +1,6 @@
 @media screen and (max-width: 420px) {
   body {
     margin: 0;
-    width: 100vw;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
@@ -11,7 +10,6 @@
   .row {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 0;
   }
@@ -35,8 +33,14 @@
   }
 
   #why > .row > div.first,
-  #why > .row > div.third,
-  #why > .row > div.second {
+  #why > .row > div.second,
+  #why > .row > div.third {
+    margin-top: 15px;
+  }
+  #why > .row > div.third {
+    margin-bottom: 15px;
+  }
+  hr {
     margin-top: 0;
   }
 }
