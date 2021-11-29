@@ -1,17 +1,42 @@
 @media screen and (max-width: 420px) {
   body {
-    background-color: #f2f2cd;
     margin: 0;
     width: 100vw;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .row {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
+  }
+
+  #lezioni,
+  #why {
+    background-color: #f2f2cd;
+  }
+
+  #lezioni .row > .left,
+  #lezioni .row > .right,
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    width: 100%;
+  }
+
+  #lezioni > .row > div,
+  #steps > .row > div {
+    padding: 15px 0;
+  }
+
+  #why > .row > div.first,
+  #why > .row > div.third,
+  #why > .row > div.second {
     margin-top: 0;
   }
 }
