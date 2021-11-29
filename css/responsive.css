@@ -6,7 +6,9 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
+  body > * {
+    overflow-x: hidden;
+  }
   .row {
     display: flex;
     flex-direction: column;
