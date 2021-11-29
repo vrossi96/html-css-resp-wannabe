@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 421px), screen and (max-width: 768px) {
   body {
     margin: 0;
     font-size: 2rem;
@@ -7,7 +7,8 @@
     align-items: flex-start;
   }
 
-  .row {
+  #lezioni .row,
+  #why .row {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,16 +21,18 @@
   }
 
   #lezioni .row > .left,
-  #lezioni .row > .right,
-  #steps .row > .left,
-  #steps .row > .central,
-  #steps .row > .right {
+  #lezioni .row > .right {
     width: 100%;
   }
 
-  #lezioni > .row > div,
-  #steps > .row > div {
+  #lezioni > .row > div {
     padding: 15px 0;
+  }
+  #steps > .row > div.left,
+  #steps > .row > div.central,
+  #steps > .row > div.right {
+    width: calc(100% / 3 - 30px);
+    padding: 15px;
   }
 
   #why > .row > div.first,

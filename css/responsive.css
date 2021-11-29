@@ -21,9 +21,9 @@
 
   #lezioni .row > .left,
   #lezioni .row > .right,
-  #steps .row > .left,
-  #steps .row > .central,
-  #steps .row > .right {
+  #steps > div.row > div.left,
+  #steps > div.row > div.central,
+  #steps > div.row > div.right {
     width: 100%;
   }
 
